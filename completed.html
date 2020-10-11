@@ -1,0 +1,37 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="completed.css" <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="box">
+      <div style="display: inline-block">
+        <h1>Hello,John doe!</h1>
+        <label id="lblGreetings"></label>
+      </div>
+      <div class="pfp" style="display: inline-block; vertical-align: top">
+        <img src="download (3).jpg" class="pfp" class="center" />
+      </div>
+      <a href="theblog.html">
+        <button class="button">Click here to begin!</button>
+      </a>
+    </div>
+  </body>
+  <script>
+    var myDate = new Date();
+    var hrs = myDate.getHours();
+
+    var greet;
+
+    if (hrs < 12) greet = "Good Morning";
+    else if (hrs >= 12 && hrs <= 17) greet = "Good Afternoon";
+    else if (hrs >= 17 && hrs <= 24) greet = "Good Evening";
+
+    document.getElementById("lblGreetings").innerHTML =
+      "<b>" + greet + "</b> and welcome to The emeraldfield blog!.com!";
+  </script>
+</html>
